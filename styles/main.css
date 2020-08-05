@@ -19,7 +19,9 @@
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
     font-size: 60%; /* controle das medidas rem
-    rem = root element. Se baseia no valor estabelecido no root. */
+    rem = root element. Se baseia no valor
+     estabelecido no root.
+     16px - 100% - 1rem */
 }
 
 *{
@@ -56,4 +58,10 @@ textarea {
 #container {
     width: 90vw;
     max-width: 700px;
+}
+
+@media (min-width: 700px){
+    :root {
+        font-size: 62.5%;/*todo 1rem vai ser relativo a 10px*/
+    }
 }
